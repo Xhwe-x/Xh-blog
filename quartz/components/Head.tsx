@@ -83,6 +83,9 @@ export default (() => {
       typeof frontmatterAuthor === "string" && frontmatterAuthor.trim().length > 0
         ? frontmatterAuthor.trim()
         : siteIdentity.nameZh
+    const metaAuthorName = isArticle
+      ? articleAuthorName
+      : `${siteIdentity.nameZh} / ${siteIdentity.nameEn}`
     const isCurrentAuthor = articleAuthorName === siteIdentity.nameZh
     const articleAuthor = {
       "@type": "Person",
@@ -215,8 +218,8 @@ export default (() => {
         />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content={`${siteIdentity.nameZh} / ${siteIdentity.nameEn}`} />
-        <meta name="creator" content={`${siteIdentity.nameZh} / ${siteIdentity.nameEn}`} />
+        <meta name="author" content={metaAuthorName} />
+        <meta name="creator" content={metaAuthorName} />
 
         <meta property="og:site_name" content={cfg.pageTitle}></meta>
         <meta property="og:title" content={seoTitle} />
@@ -232,7 +235,10 @@ export default (() => {
           }
         />
         {keywords && <meta name="keywords" content={keywords} />}
-        <meta name="twitter:card" content={ogImageDefaultPath ? "summary_large_image" : "summary"} />
+        <meta
+          name="twitter:card"
+          content={ogImageDefaultPath ? "summary_large_image" : "summary"}
+        />
         <meta name="twitter:title" content={seoTitle} />
         <meta name="twitter:description" content={seoDescription} />
         <meta property="og:description" content={seoDescription} />

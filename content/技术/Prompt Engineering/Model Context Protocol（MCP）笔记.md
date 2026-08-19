@@ -178,9 +178,3 @@ run().catch(console.error);
 **💡 极速接入技巧 (Cursor 视角)：**
 
 在 Cursor 的 `Settings -> Features -> MCP` 中，只需点击 `+ Add new MCP server`，输入类型为 `command`，然后填入类似 `npx -y @modelcontextprotocol/server-sqlite --db /path/to/your/db.sqlite`，即可瞬间完成外设挂载，开启 Vibe Coding。
-
-## 相关笔记
-
-- [[Function Calling & Tool Use 笔记]]：工具调用的“思想前身”，MCP 把它标准化、模块化。
-- [[Harness Engineering（Agent 运行底座）笔记]]：Harness 负责调度，MCP 负责标准接入外设。
-- [[Context Engineering（上下文工程）笔记]]：通过 MCP 读取资源/调用工具，本质上也是在注入高信噪比上下文。
