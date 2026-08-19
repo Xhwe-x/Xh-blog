@@ -34,7 +34,13 @@ const SOCIALS: Array<{ label: string; href: string; icon: preact.JSX.Element }> 
         <circle cx="12" cy="13" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8" />
         <circle cx="9.5" cy="12" r="1" fill="currentColor" />
         <circle cx="14.5" cy="12" r="1" fill="currentColor" />
-        <path d="M9 15c1.5 1 4.5 1 6 0M14 6l1-3 3 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        <path
+          d="M9 15c1.5 1 4.5 1 6 0M14 6l1-3 3 1"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
         <circle cx="19" cy="4" r="1.2" fill="currentColor" />
       </svg>
     ),

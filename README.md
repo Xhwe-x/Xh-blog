@@ -29,13 +29,13 @@ npx quartz build --serve --watch --port 8081 --wsPort 3010
 
 ## 常用命令
 
-| 命令             | 用途                               |
-| ---------------- | ---------------------------------- |
-| `npm run dev`    | 启动本地开发服务器                 |
-| `npm run format` | 使用 Prettier 格式化源文件         |
-| `npm run check`  | 检查 TypeScript 类型与代码格式     |
-| `npm run build`  | 构建静态站点到 `public/`           |
-| `npm test`       | 运行自动化测试                     |
+| 命令             | 用途                           |
+| ---------------- | ------------------------------ |
+| `npm run dev`    | 启动本地开发服务器             |
+| `npm run format` | 使用 Prettier 格式化源文件     |
+| `npm run check`  | 检查 TypeScript 类型与代码格式 |
+| `npm run build`  | 构建静态站点到 `public/`       |
+| `npm test`       | 运行自动化测试                 |
 
 发布前应依次运行：
 

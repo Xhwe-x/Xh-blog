@@ -41,6 +41,7 @@
 ### Task 1: Central identity and optional-domain behavior
 
 **Files:**
+
 - Create: `quartz/siteIdentity.ts`
 - Create: `quartz/siteIdentity.test.ts`
 - Create: `quartz/util/siteUrl.ts`
@@ -54,6 +55,7 @@
 - Modify: `quartz/components/Footer.tsx`
 
 **Interfaces:**
+
 - Produces: `siteIdentity`, an immutable object with names, role, location, email, and `socialLinks`.
 - Produces: `getSiteUrl(baseUrl?: string): URL | undefined`.
 - Consumes: Quartz `cfg.baseUrl`, component props, and existing footer link options.
@@ -155,12 +157,14 @@ git commit -m "feat: centralize Xavier site identity"
 ### Task 2: Rewrite public current-author pages
 
 **Files:**
+
 - Modify: `content/index.md`
 - Modify: `content/技术/个人经历.md`
 - Modify: `content/llms.txt`
 - Modify: `content/robots.txt`
 
 **Interfaces:**
+
 - Consumes: the confirmed copy and links in `siteIdentity`.
 - Produces: bilingual public homepage and biography without unverified claims.
 
@@ -202,6 +206,7 @@ git commit -m "content: rewrite public Xavier profile"
 ### Task 3: Archive unowned projects and collections
 
 **Files:**
+
 - Modify: `content/Projects/index.md`
 - Modify: `content/Projects/Active Habits.md`
 - Modify: `content/Projects/ActiveToDo.md`
@@ -215,6 +220,7 @@ git commit -m "content: rewrite public Xavier profile"
 - Modify: `content/collections.md`
 
 **Interfaces:**
+
 - Produces: public project placeholder index.
 - Preserves: all legacy bodies and media behind Quartz draft filtering.
 
@@ -252,9 +258,11 @@ git commit -m "content: archive unowned projects and collections"
 ### Task 4: Reduce and attribute legacy writing
 
 **Files:**
+
 - Modify: all Markdown files under `content/技术` and `content/英语` except the rewritten biography.
 
 **Interfaces:**
+
 - Produces: exactly five published legacy articles with visible attribution.
 - Preserves: all other legacy article bodies as drafts.
 
@@ -304,6 +312,7 @@ git commit -m "content: retain one attributed article per section"
 ### Task 5: Version, documentation, and repository hygiene
 
 **Files:**
+
 - Modify: `.gitignore`
 - Create: `.dockerignore`
 - Modify: `package.json`
@@ -312,6 +321,7 @@ git commit -m "content: retain one attributed article per section"
 - Create: `CHANGELOG.md`
 
 **Interfaces:**
+
 - Produces: installable v1.0.1 repository metadata and maintenance guidance.
 
 - [ ] **Step 1: Fix ignore rules**
@@ -352,10 +362,12 @@ git commit -m "release: migrate blog identity to Xia Hao v1.0.1"
 ### Task 6: Full verification and GitHub publication
 
 **Files:**
+
 - Verify: all repository source files.
 - Commit: any formatting-only changes from the required formatter.
 
 **Interfaces:**
+
 - Consumes: all earlier task outputs.
 - Produces: verified `main` branch pushed to the empty GitHub repository.
 
