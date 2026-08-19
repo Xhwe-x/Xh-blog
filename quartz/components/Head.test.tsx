@@ -28,7 +28,7 @@ const cfg = {
 } as unknown as GlobalConfiguration
 
 function renderHead(frontmatter: Record<string, unknown>): string {
-  const Component = Head(undefined)
+  const Component = Head()
   const props = {
     cfg,
     fileData: {
