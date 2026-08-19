@@ -76,6 +76,8 @@ draft: false
 
 旧项目详情和截图仍保留为草稿，仅供后续参考，不会进入公开构建。
 
+旧项目的独立 HTML 演示保存在 `archive/playground/`，该目录不参与 Quartz 静态资源发布。需要重新使用时，请先确认项目归属，再将对应演示移回公开资源目录并更新链接。
+
 ### 修改相册与收藏
 
 - 相册文字与图片引用：`content/album.md`
@@ -107,6 +109,7 @@ draft: false
 
 ```text
 content/                 网站内容和媒体
+archive/playground/      不参与构建的旧项目 HTML 演示
 quartz/components/       自定义页面组件
 quartz/siteIdentity.ts   全站身份配置
 quartz/styles/           全局和页面样式

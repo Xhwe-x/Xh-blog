@@ -1,0 +1,745 @@
+body[data-slug="index"],
+body[data-slug="Projects/index"] {
+  .page {
+    max-width: 1120px;
+  }
+
+  .page > #quartz-body {
+    padding-inline: clamp(0.85rem, 3vw, 1.5rem);
+  }
+
+  .page-header {
+    width: 100%;
+  }
+
+  article {
+    max-width: none;
+  }
+}
+
+.portfolio-kicker {
+  margin: 0 0 0.7rem;
+  color: var(--secondary);
+  font-family: var(--codeFont);
+  font-size: var(--type-xs, 0.75rem);
+  font-weight: var(--weight-semibold, 600);
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.portfolio-hero {
+  display: block;
+  padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(4.5rem, 9vw, 7rem);
+}
+
+.portfolio-hero-copy {
+  max-width: 900px;
+  animation: portfolio-rise 0.65s cubic-bezier(0.2, 0.72, 0.2, 1) both;
+
+  h1 {
+    max-width: 13ch;
+    margin: 0;
+    color: var(--dark);
+    font-size: clamp(2.8rem, 7vw, 5.8rem);
+    font-weight: 700;
+    letter-spacing: -0.065em;
+    line-height: 0.94;
+  }
+}
+
+.portfolio-lede {
+  max-width: 19ch;
+  margin: 1.5rem 0 0;
+  color: var(--dark);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+}
+
+.portfolio-intro {
+  max-width: 53ch;
+  margin: 1.1rem 0 0;
+  color: var(--darkgray);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.7rem;
+}
+
+a.portfolio-action {
+  display: inline-flex;
+  min-height: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 9px;
+  color: var(--dark);
+  background: transparent;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--secondary) 45%, var(--lightgray));
+    background: color-mix(in srgb, var(--secondary) 7%, transparent);
+  }
+}
+
+a.portfolio-action-primary {
+  border-color: var(--secondary);
+  color: var(--light);
+  background: var(--secondary);
+
+  &:hover {
+    color: var(--light);
+    background: color-mix(in srgb, var(--secondary) 88%, var(--dark));
+  }
+}
+
+.portfolio-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  margin-top: 1.5rem;
+  color: var(--gray);
+  font-size: 0.76rem;
+
+  span {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35rem;
+  }
+
+  strong {
+    color: var(--dark);
+    font-family: var(--codeFont);
+    font-size: 0.86rem;
+  }
+}
+
+.portfolio-section {
+  padding: clamp(3.5rem, 8vw, 7rem) 0;
+  border-top: 1px solid var(--lightgray);
+}
+
+.portfolio-section-head,
+.projects-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+
+  h2 {
+    max-width: 18ch;
+    margin: 0;
+    color: var(--dark);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    letter-spacing: -0.045em;
+    line-height: 1.08;
+  }
+
+  > a {
+    flex: 0 0 auto;
+    color: var(--darkgray);
+    font-size: 0.82rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+.portfolio-work-list {
+  display: grid;
+}
+
+.portfolio-work {
+  display: block;
+  padding: clamp(2.5rem, 6vw, 5rem) 0;
+  border-bottom: 1px solid var(--lightgray);
+  color: var(--dark);
+  text-decoration: none;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    margin: 0.55rem 0 0;
+    color: var(--dark);
+    font-size: clamp(2rem, 4.5vw, 3.6rem);
+    letter-spacing: -0.05em;
+    line-height: 1;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
+
+  p {
+    max-width: 46ch;
+    margin: 1rem 0;
+    color: var(--darkgray);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  strong {
+    color: var(--secondary);
+    font-size: 0.82rem;
+  }
+}
+
+.portfolio-work-reverse {
+  text-align: right;
+
+  p {
+    margin-left: auto;
+  }
+}
+
+.portfolio-work-meta {
+  color: var(--gray);
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.portfolio-link-list,
+.projects-text-list,
+.projects-product-list {
+  border-top: 1px solid var(--lightgray);
+
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.25rem 0.15rem;
+    border-bottom: 1px solid var(--lightgray);
+    color: var(--dark);
+    text-decoration: none;
+    transition:
+      padding 0.18s ease,
+      color 0.18s ease;
+
+    &:hover {
+      padding-left: 0.6rem;
+      color: var(--secondary);
+    }
+  }
+}
+
+.portfolio-link-list {
+  span {
+    font-size: clamp(1rem, 2vw, 1.22rem);
+    font-weight: 600;
+  }
+
+  small {
+    color: var(--gray);
+    font-size: 0.76rem;
+    text-align: right;
+  }
+}
+
+.portfolio-closing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 3rem;
+  align-items: end;
+  margin: 0 0 1rem;
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+  border-top: 1px solid var(--lightgray);
+
+  h2 {
+    max-width: 25ch;
+    margin: 0;
+    color: var(--dark);
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    letter-spacing: -0.04em;
+  }
+
+  p:last-child {
+    margin: 1rem 0 0;
+    color: var(--gray);
+    font-family: var(--codeFont);
+    font-size: 0.75rem;
+  }
+}
+
+.portfolio-closing-links {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    color: var(--darkgray);
+    font-size: 0.82rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+body[data-slug="Projects/index"][data-slug] {
+  background: var(--surface-canvas, var(--light));
+
+  .page-header header {
+    margin-bottom: clamp(1.25rem, 2.5vw, 1.75rem);
+  }
+
+  .page.page {
+    max-width: 1160px;
+  }
+
+  .center article {
+    box-sizing: border-box;
+    width: min(100%, 66rem);
+    max-width: 66rem;
+    margin-inline: auto;
+    padding: clamp(0.5rem, 1.5vw, 1rem) 0 clamp(5rem, 10vw, 8rem);
+  }
+}
+
+.project-chapter {
+  margin-bottom: clamp(4rem, 7vw, 5.5rem);
+}
+
+.project-chapter-heading {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: 1rem;
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+
+  .project-chapter-number {
+    padding-top: 0.2rem;
+    color: var(--secondary);
+    font-family: var(--codeFont);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
+
+  p {
+    margin: 0 0 0.35rem;
+    color: var(--gray);
+    font-family: var(--codeFont);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    color: var(--dark);
+    font-size: clamp(1.8rem, 4vw, 3.25rem);
+    font-weight: var(--weight-semibold, 600);
+    letter-spacing: -0.055em;
+    line-height: 1.05;
+  }
+}
+
+.project-journal {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 1.25rem;
+  padding-left: 4.25rem;
+}
+
+.project-journal-entry {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(0, 1fr);
+  gap: 0.5rem 0.75rem;
+  align-items: start;
+  padding: 0.8rem 0.65rem 0.9rem;
+  border: 0;
+  border-radius: 0;
+  color: var(--darkgray);
+  background: transparent;
+  text-decoration: none !important;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    transform: translateX(0.2rem);
+    background: color-mix(in srgb, var(--surface-subtle) 62%, transparent);
+
+    .project-journal-title {
+      color: var(--secondary);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--secondary) 65%, transparent);
+    outline-offset: 2px;
+  }
+}
+
+.project-journal-index {
+  display: block;
+  padding-top: 0.18rem;
+  color: var(--secondary);
+  font-family: var(--codeFont);
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+}
+
+.project-journal-copy {
+  min-width: 0;
+
+  .project-journal-meta {
+    margin: 0 0 0.25rem;
+    color: var(--gray);
+    font-family: var(--codeFont);
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .project-journal-title {
+    display: block;
+    margin: 0;
+    color: var(--dark);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    font-weight: var(--weight-semibold, 600);
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+    transition: color 0.18s ease;
+  }
+
+  > p:last-child {
+    display: -webkit-box;
+    max-width: none;
+    margin: 0.4rem 0 0;
+    overflow: hidden;
+    color: var(--gray);
+    font-size: 0.78rem;
+    line-height: 1.55;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+
+.project-journal-result {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  color: var(--gray);
+  text-align: left;
+
+  strong {
+    margin: 0 0 0 auto;
+    color: var(--dark);
+    font-family: var(--codeFont);
+    font-size: 1rem;
+    font-weight: var(--weight-medium, 500);
+  }
+
+  small {
+    font-size: 0.68rem;
+  }
+}
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--codeFont);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  i {
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    background: var(--secondary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--secondary) 12%, transparent);
+  }
+}
+
+.project-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  padding-left: 4.25rem;
+}
+
+.project-tool {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr) auto;
+  gap: 0.9rem;
+  align-items: center;
+  min-width: 0;
+  min-height: 5.5rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: var(--radius-md, 8px);
+  color: var(--darkgray);
+  background: transparent;
+  text-decoration: none !important;
+  transition:
+    background-color 0.18s ease,
+    transform 0.18s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: var(--surface-subtle);
+
+    .project-tool-title {
+      color: var(--secondary);
+    }
+  }
+
+  .project-tool-title,
+  p {
+    margin: 0;
+  }
+
+  .project-tool-title {
+    display: block;
+    overflow: hidden;
+    color: var(--dark);
+    font-size: 0.98rem;
+    font-weight: var(--weight-semibold, 600);
+    text-overflow: ellipsis;
+    transition: color 0.18s ease;
+    white-space: nowrap;
+  }
+
+  p {
+    margin-top: 0.22rem;
+    color: var(--gray);
+    font-size: 0.76rem;
+    line-height: 1.5;
+  }
+}
+
+.project-tool-code {
+  color: var(--secondary);
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+}
+
+.project-tool-kind {
+  color: var(--gray);
+  font-family: var(--codeFont);
+  font-size: 0.62rem;
+}
+
+.project-lab-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem 1rem;
+  padding-left: 4.25rem;
+
+  a {
+    display: grid;
+    min-width: 0;
+    padding: 0.9rem 0.7rem;
+    border-radius: var(--radius-sm, 6px);
+    color: var(--darkgray);
+    text-decoration: none !important;
+    transition: background-color 0.18s ease;
+
+    &:hover {
+      background: var(--surface-subtle);
+
+      strong {
+        color: var(--secondary);
+      }
+    }
+  }
+
+  strong {
+    overflow: hidden;
+    color: var(--dark);
+    font-size: 0.88rem;
+    font-weight: var(--weight-medium, 500);
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    transition: color 0.18s ease;
+    white-space: nowrap;
+  }
+
+  span {
+    margin-top: 0.25rem;
+    color: var(--gray);
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  em {
+    margin-top: 0.65rem;
+    color: color-mix(in srgb, var(--secondary) 70%, var(--gray));
+    font-family: var(--codeFont);
+    font-size: 0.6rem;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes portfolio-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-hero-copy {
+    animation: none;
+  }
+
+  .project-journal-entry,
+  .project-journal-copy .project-journal-title,
+  .project-tool,
+  .project-tool .project-tool-title,
+  .project-lab-list a,
+  .project-lab-list strong {
+    transition: none;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .portfolio-hero {
+    min-height: 0;
+    padding-top: 2.5rem;
+  }
+
+  .portfolio-hero-copy h1 {
+    font-size: clamp(2.7rem, 14vw, 4rem);
+  }
+
+  .portfolio-lede {
+    max-width: 22ch;
+    font-size: 1.35rem;
+  }
+
+  .portfolio-proof {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.7rem;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+  }
+
+  .portfolio-section-head,
+  .projects-section-head {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .portfolio-work,
+  .portfolio-work-reverse {
+    text-align: left;
+
+    p {
+      margin-left: 0;
+    }
+  }
+
+  .portfolio-closing {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  body[data-slug="Projects/index"] .center article {
+    width: 100%;
+    max-width: none;
+    padding-bottom: 5rem;
+  }
+
+  .project-chapter-heading {
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  .project-journal {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .project-journal-entry {
+    padding-inline: 0.35rem;
+  }
+
+  .project-tool-grid {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .project-lab-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 0;
+  }
+}
+
+@media all and (max-width: 440px) {
+  .portfolio-proof {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  a.portfolio-action {
+    padding-inline: 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .project-journal-copy > p:last-child {
+    font-size: 0.78rem;
+  }
+
+  .project-journal-result small {
+    display: none;
+  }
+
+  .project-lab-list {
+    grid-template-columns: 1fr;
+  }
+}

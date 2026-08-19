@@ -1,0 +1,23 @@
+body:not([data-slug="index"]):not([data-slug="blog"]):not([data-slug="Projects/index"]):not(
+    [data-slug="album"]
+  ):not([data-slug="collections"]) {
+  article {
+    p,
+    li {
+      text-wrap: pretty;
+    }
+
+    h2 {
+      margin-top: 2.8rem;
+      padding-top: 0.35rem;
+    }
+
+    h3 {
+      margin-top: 2rem;
+    }
+
+    a {
+      overflow-wrap: anywhere;
+    }
+  }
+}

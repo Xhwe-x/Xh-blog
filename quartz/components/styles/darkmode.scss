@@ -1,0 +1,64 @@
+.darkmode {
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: none;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  text-align: inherit;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: var(--lightgray);
+  }
+
+  & svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: calc(50% - 9px);
+    fill: none;
+    stroke: var(--darkgray);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      stroke 0.2s ease;
+  }
+
+  &:hover svg {
+    stroke: var(--secondary);
+  }
+}
+
+:root[saved-theme="dark"] {
+  color-scheme: dark;
+}
+
+:root[saved-theme="light"] {
+  color-scheme: light;
+}
+
+:root[saved-theme="dark"] .darkmode {
+  & > .dayIcon {
+    display: none;
+  }
+  & > .nightIcon {
+    display: inline;
+  }
+}
+
+:root .darkmode {
+  & > .dayIcon {
+    display: inline;
+  }
+  & > .nightIcon {
+    display: none;
+  }
+}
