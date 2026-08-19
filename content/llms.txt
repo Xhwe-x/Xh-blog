@@ -1,0 +1,24 @@
+# 夏豪 / Xavier
+
+> 夏豪（Xavier / Xia Hao）的个人博客，记录信息化设计、Vibe Coding 与英语学习。
+
+Author: 夏豪 / Xavier
+Role: 信息化设计师 / Information Designer
+Location: Chongqing, China
+Language: zh-CN, with selected English profile content
+Repository: https://github.com/Xhwe-x/Xh-blog
+
+## 公开内容
+
+- 首页：作者介绍、关注领域与联系方式。
+- 博客：当前作者内容，以及少量明确标注原作者的旧站资料。
+- 项目：为夏豪后续添加个人项目保留的展示结构。
+
+## 联系方式
+
+- GitHub: https://github.com/Xhwe-x
+- Reddit: https://www.reddit.com/user/PrimaryLeg9045/
+- X: https://x.com/Xavier9823
+- Email: 2039690860xh@gmail.com
+
+正式域名尚未配置。引用本站内容时，请优先链接到未来发布页面或当前 GitHub 仓库。
