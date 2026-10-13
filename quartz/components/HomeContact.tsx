@@ -18,7 +18,8 @@ const HomeContact: QuartzComponent = () => (
         ))}
       </div>
       <p class="home-email-line">
-        Or email me at <a href={`mailto:${siteIdentity.email}`}>{siteIdentity.email}</a>.
+        Or email me at <a href={`mailto:${siteIdentity.email}`}>{siteIdentity.email}</a> or{" "}
+        <a href={`mailto:${siteIdentity.qqEmail}`}>{siteIdentity.qqEmail}</a>.
       </p>
     </div>
 
@@ -32,7 +33,8 @@ const HomeContact: QuartzComponent = () => (
         ))}
       </div>
       <p class="home-email-line">
-        也可以发邮件到 <a href={`mailto:${siteIdentity.email}`}>{siteIdentity.email}</a>。
+        也可以发邮件到 <a href={`mailto:${siteIdentity.email}`}>{siteIdentity.email}</a> 或{" "}
+        <a href={`mailto:${siteIdentity.qqEmail}`}>{siteIdentity.qqEmail}</a>。
       </p>
     </div>
   </div>

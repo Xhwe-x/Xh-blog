@@ -14,11 +14,16 @@ Repository: https://github.com/Xhwe-x/Xh-blog
 - 博客：当前作者内容，以及少量明确标注原作者的旧站资料。
 - 项目：为夏豪后续添加个人项目保留的展示结构。
 
+- 相册：城市、天空、街巷与夜游摄影。
+- 收藏：常用账号、办公设备、游戏与喜欢的音乐作品。
+
 ## 联系方式
 
 - GitHub: https://github.com/Xhwe-x
 - Reddit: https://www.reddit.com/user/PrimaryLeg9045/
 - X: https://x.com/Xavier9823
-- Email: 2039690860xh@gmail.com
+- Steam: https://steamcommunity.com/profiles/76561199212782956/
+- QQ Email: 2039690860@qq.com
+- Email: alexxh1goog@gmail.com
 
 正式域名尚未配置。引用本站内容时，请优先链接到未来发布页面或当前 GitHub 仓库。
